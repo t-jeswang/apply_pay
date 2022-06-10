@@ -4,9 +4,14 @@
     <style type="text/css">
 
 .apple-pay-button {
+   min-width: 150px;
+    min-height: 30px;
+    border-radius: 3px;
+    padding: 0px 0px;
+    box-sizing: border-box;
     display: inline-block;
     -webkit-appearance: -apple-pay-button;
-    -apple-pay-button-type: donate; /* Use any supported button type. */
+    -apple-pay-button-type: buy; /* Use any supported button type. */
 }
 .apple-pay-button-black {
     -apple-pay-button-style: black;
@@ -17,11 +22,14 @@
 .apple-pay-button-white-with-line {
     -apple-pay-button-style: white-outline;
 }
+
 </style>
 </head>
 <body>
+    <h1>Apple pay simulation</h1>
 <div class="apple-pay-button apple-pay-button-black">
 </div>
 <script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
 </body>
+
 
